@@ -1,0 +1,3 @@
+export default {
+  CONFIRMATION: "PNC_ACCESS_KEY_CONFIRMATION",
+};

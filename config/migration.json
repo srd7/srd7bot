@@ -1,0 +1,19 @@
+{
+  "development": {
+    "username": "testuser",
+    "password": "testpass",
+    "database": "testdb",
+    "host": "192.168.100.10",
+    "dialect": "postgresql"
+  },
+  "test": {
+    "username": "root",
+    "password": null,
+    "database": "database_test",
+    "host": "127.0.0.1",
+    "dialect": "postgresql"
+  },
+  "production": {
+    "use_env_variable": "DATABASE_URL"
+  }
+}

@@ -1,0 +1,32 @@
+# Postgresql
+postgresql:
+  image: postgres:9.6
+  container_name: bot_postgresql
+  ports:
+    - "5432:5432"
+  environment:
+    POSTGRES_USER    : "testuser"
+    POSTGRES_PASSWORD: "testpass"
+    POSTGRES_DB      : "testdb"
+# MongoDB
+mongodb:
+  image: tutum/mongodb
+  container_name: bot_mongodb
+  ports:
+    - "27017:27017"
+  environment:
+    MONGODB_USER    : "testuser"
+    MONGODB_PASS    : "testpass"
+    MONGODB_DATABASE: "testdb"
+# Redis
+redis:
+  image: redis:3.2
+  container_name: bot_redis
+  ports:
+    - "6379:6379"
+# Main server
+app:
+  build: "./provision"
+  container_name: "bot_app"
+  links:
+    - mongodb:mongodb

@@ -1,0 +1,5 @@
+{
+  "ignore" : "node_modules/**",
+  "presets": ["react", "env", "stage-0"],
+  "plugins": ["transform-decorators-legacy"]
+}

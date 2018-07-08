@@ -1,0 +1,5 @@
+.vagrant/
+node_modules/
+npm-debug.log
+dist/
+heroku_log
